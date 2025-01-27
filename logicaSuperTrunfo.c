@@ -1,43 +1,40 @@
 #include <stdio.h>
+int main()
+{
+    // Definição das variáveis do super trunfo cidades.
+    char cidade[20];
+    char codigo[3];
+    int pop, pontos_turisticos;
+    float area, pib;
+   
+    // entrada dados das cartas
+    printf("Entre o nome da cidade:\n");
+    scanf("%19s", cidade);
 
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
+    printf("Entre o codigo da carta:\n");
+    scanf("%3s", codigo);
 
-int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
+    printf("Entre a populacao:\n");
+    scanf("%d", &pop);
 
-    
-    // Cadastro das Cartas:
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
+    printf("Entre a Area:\n");
+    scanf("%f", &area);
 
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
+    printf("Entre o pib:\n");
+    scanf("%f", &pib);
 
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
+    printf("Entre a quantidade de pontos turisticos:\n");
+    scanf("%d", &pontos_turisticos);
 
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
+    // Imprime a carta
 
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
-
-    return 0;
+    printf("------------------------\n");
+    printf("!codigo da carta: %s\n", codigo);
+    printf("!cidade: %s\n", cidade);
+    printf("!Populacao: %d\n",pop);
+    printf("!Area: %.2f\n",area);
+    printf("!Pib: %.2f\n", pib);
+    printf("!pontos turisticos:%d\n",pontos_turisticos);
+    printf("------------------------\n");
+return 0;
 }
